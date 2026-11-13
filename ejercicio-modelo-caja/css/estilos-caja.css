@@ -1,0 +1,13 @@
+/* Ejercicio independiente de modelo de caja y posición en CSS */
+*{box-sizing:border-box}
+body{margin:0;padding:28px;background:#edf0f3;font-family:Arial,Helvetica,sans-serif;color:#20242b}
+.maqueta{width:min(100%,980px);margin:0 auto;padding:12px;border:5px solid #315f3b;background:#75b85c}
+.cabecera{min-height:145px;padding:15px;margin-bottom:12px;border:2px solid #aab2bd;background:#ec7b2e;color:white;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.cabecera h1{font-size:1.35rem}
+.cabecera img{width:180px;height:105px;object-fit:cover;border:3px solid #fff}
+.navegacion{height:48px;margin-bottom:12px;padding:12px;text-align:center;background:#315b98;color:#fff}
+.contenido{display:flex;gap:12px;min-height:235px;margin-bottom:12px}
+.principal{width:62%;padding:24px;border:2px solid #888;background:#ec7b2e;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.lateral{width:38%;padding:24px;border:2px solid #888;background:#fff000;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.pie-maqueta{padding:15px;min-height:48px;text-align:center;background:#315b98;color:#fff}
+@media(max-width:650px){body{padding:10px}.cabecera{flex-direction:column;text-align:center}.contenido{flex-direction:column}.principal,.lateral{width:100%;min-height:170px}}
