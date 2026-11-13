@@ -1,0 +1,45 @@
+:root{--negro:#111317;--rojo:#e32636;--texto:#262a31;--claro:#f0f1f3}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:75px}
+body{margin:0;color:var(--texto);font-family:Arial,Helvetica,sans-serif;line-height:1.65}
+h1,h2,h3{font-weight:800;line-height:1.2}
+h2{font-size:clamp(2rem,4vw,2.8rem);margin-bottom:1rem;color:var(--negro)}
+a{color:#b71929}
+a:hover{color:#74121d}
+.texto-rojo{color:var(--rojo)}
+#menu-principal{background:rgba(17,19,23,.98);box-shadow:0 3px 15px #0003}
+#menu-principal .nav-link{color:#eee;border-radius:4px;padding:.55rem .7rem;transition:background .2s}
+#menu-principal .nav-link:hover,#menu-principal .nav-link:focus{color:#fff;background:var(--rojo)}
+.portada{padding:85px 0 75px;min-height:620px;background:radial-gradient(circle at 75% 35%,#394352,#1d222b 48%,#111317 85%);color:#fff}
+.portada h1{font-size:clamp(2.7rem,6vw,5rem);text-transform:uppercase}
+.portada .lead{max-width:570px;color:#d7d9de}
+.hero-img{filter:drop-shadow(0 20px 25px #0007)}
+.seccion{padding:80px 0}
+.seccion-clara{background:var(--claro)}
+.etiqueta{font-size:.78rem;letter-spacing:.15em;text-transform:uppercase;color:var(--rojo);font-weight:800}
+.bajada{max-width:700px;color:#666d78}
+.panel{background:var(--negro);color:white;padding:1.8rem;border-left:5px solid var(--rojo);border-radius:8px}
+.panel a{color:#fff}
+.panel li{padding:.2rem 0}
+.historia{padding-left:1.5rem;border-left:3px solid var(--rojo)}
+.historia li{margin:0 0 1rem;padding:1rem 1.2rem;background:#fff;border-radius:7px;box-shadow:0 5px 16px #0000000d}
+.tarjeta{border:0;overflow:hidden;box-shadow:0 6px 20px #00000012;transition:transform .2s,box-shadow .2s}
+.tarjeta:hover{transform:translateY(-5px);box-shadow:0 12px 24px #0002}
+.tarjeta img{height:165px;object-fit:cover;background:#dfe2e7}
+.tarjeta .card-body{padding:1.25rem}
+.pieza{height:100%;padding:1.4rem;background:white;border:1px solid #ddd;border-top:4px solid var(--rojo);border-radius:7px}
+.pieza p{margin:0;color:#616874}
+.tabla-motor{background:white;text-align:center}
+.tabla-motor thead th{background:var(--negro);color:white}
+.tabla-motor tbody tr:nth-child(even){background:#f4f4f4}
+.tabla-motor tbody tr:hover{background:#ffe7e9}
+.accordion-button:not(.collapsed){background:#ffe9eb;color:#a31928}
+.galeria-img{width:100%;height:180px;object-fit:cover;border-radius:8px;background:#ddd}
+.glosario{display:grid;grid-template-columns:minmax(130px,200px) 1fr;gap:.6rem 1.2rem;max-width:850px}
+.glosario dt{font-weight:800;color:#a31928}
+.glosario dd{margin:0}
+.nota{font-size:.9rem;color:#68707b}
+.pie{padding:55px 0 25px;background:var(--negro);color:#e9eaed}
+.pie h2{color:white}
+.pie .etiqueta{color:#ff6572}
+@media(max-width:650px){.portada{padding:65px 0}.seccion{padding:60px 0}.glosario{grid-template-columns:1fr}.glosario dd{margin-bottom:.7rem}.galeria-img{height:135px}}
